@@ -80,15 +80,12 @@ fetch("content.json")
   const articles = data.filter(item => !item.featured);
     document.getElementById("content").innerHTML = `
       <div class="hero-card">
-  <img src="${featured.image}" alt="${featured.title}">
-  <div class="hero-content">
-<div class="hero-content">
-  <h2>${featured.url}</h2>
-  <p>${featured.summary}</p>
-    <p>${featured.summary}</p>
-    <small>${featured.source} • ${featured.readTime}</small>
-  </div>
-</div>
+        <img src="${featured.image}" alt="${featured.title}">
+      <div class="hero-content">
+        <h2>${featured.url}</h2>
+        <p>${featured.summary}</p>
+        <small>${featured.source} • ${featured.readTime}</small>
+      </div>
       <div class="grid">
        ${articles.map(item => `
           <div class="box">
