@@ -32,7 +32,7 @@
     "image": "images/gottman-conversation.jpg",
     "url": "https://www.gottman.com/blog/the-6-things-that-predict-divorce/",
     "category": "Family",
-    "type": "Featured",
+    "type": "Essay",
     "readTime": "7 min",
     "dateAdded": "2026-11-23"
   },
@@ -44,7 +44,7 @@
     "image": "images/engineering-strategy.jpg",
     "url": "https://sloanreview.mit.edu/article/strategic-thinking-at-the-top/",
     "category": "Strategy",
-    "type": "Featured",
+    "type": "Essay",
     "readTime": "9 min",
     "dateAdded": "2026-11-23"
   },
@@ -68,7 +68,7 @@
     "image": "images/bergen-winter.jpg",
     "url": "https://www.authormagazine.com/travel/norwegian-fjords-in-august-the-light-that-doesnt-end-and-the-silence-that-earns-it",
     "category": "Norway & Ideas",
-    "type": "Featured",
+    "type": "Essay",
     "readTime": "4 min",
     "dateAdded": "2026-11-23"
   }
