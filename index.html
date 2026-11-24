@@ -1,44 +1,136 @@
-<div class="hero-card">
-  <a href="${featured.url}" target="_blank">
-    <img src="${featured.image}" alt="${featured.title}">
-  </a>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Intelligence Dashboard</title>
+<style>
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
+body{
+  background-image: url('IMG_4433.jpeg');
+  background-size: cover; background-position: center; background-attachment: fixed;
+  margin:40px;
+  font-family:'Satoshi',sans-serif;
+  color:#222;
+}
+h1{ margin-bottom:5px; color:white; font-size:3rem; 
+}
+.box{
+  background:rgba(255,255,255,0.50);
+  backdrop-filter: blur(4px);
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:10px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+.hero-card{
+  background:rgba(255,255,255,0.50);
+  backdrop-filter:blur(4px);
+  border-radius:10px;
+  overflow:hidden;
+  margin-bottom: 20px;
+}
+
+.hero-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.hero-content{
+  padding:20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+small {
+  color: #666;
+}
+  @media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-card img {
+    height: 220px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Personal Intelligence Dashboard</h1>
+<p style="color:white;">Calm. Curious. Intentional.</p>
+
+<div id="content"></div>
+
+<script>
+fetch("content.json")
+  .then(res => res.json())
+.then(data => {
+  const featured = data.find(item => item.featured);
+  const articles = data.filter(item => !item.featured);
+    document.getElementById("content").innerHTML = `
+      <div class="hero-card">
+  <img src="${featured.image}" alt="${featured.title}">
   <div class="hero-content">
     <h2>
-      <a href="${featured.url}"
-         target="_blank"
-         style="color:#222;text-decoration:none;">
-        ${featured.title}
-      </a>
-    </h2>
-
+  <a href="${featured.url}"
+     target="_blank"
+     style="color:#222;text-decoration:none;">
+    ${featured.title}
+  </a>
+</h2>
     <p>${featured.summary}</p>
-
     <small>${featured.source} • ${featured.readTime}</small>
   </div>
 </div>
+      <div class="grid">
+       ${articles.map(item => `
+          <div class="box">
+            <img src="${item.image}"
+                 alt="${item.title}"
+                 style="width:100%;height:200px;object-fit:cover;border-radius:8px;">
 
-<div class="grid">
-  ${articles.map(item => `
-    <div class="box">
-      <img src="${item.image}"
-           alt="${item.title}"
-           style="width:100%;height:200px;object-fit:cover;border-radius:8px;">
+            <h3>
+              <a href="${item.url}"
+                 target="_blank"
+                 style="color:#222;text-decoration:none;">
+                ${item.title}
+              </a>
+            </h3>
 
-      <h3>
-        <a href="${item.url}"
-           target="_blank"
-           style="color:#222;text-decoration:none;">
-          ${item.title}
-        </a>
-      </h3>
+            <p>${item.summary}</p>
 
-      <p>${item.summary}</p>
+            <small>
+              ${item.author}<br>
+              ${item.source} • ${item.readTime}
+            </small>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  });
+</script>
 
-      <small>
-        ${item.author}<br>
-        ${item.source} • ${item.readTime}
-      </small>
-    </div>
-  `).join("")}
-</div>
+
+</body>
+</html>
