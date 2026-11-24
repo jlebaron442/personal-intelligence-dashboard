@@ -9,7 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Say hello
-        run: echo "Pipeline works"
+      - name: Run Python
+        run: python --version
         
