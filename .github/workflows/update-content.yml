@@ -11,6 +11,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Run Python
-        run: python --version
+      - name: Run script
+        run: python update_content.py
         
