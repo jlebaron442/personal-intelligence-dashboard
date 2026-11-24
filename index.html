@@ -72,7 +72,7 @@ fetch("content.json")
   const articles = data.filter(item => !item.featured);
     document.getElementById("content").innerHTML = `
       <div class="grid">
-        ${data.map(item => `
+       ${articles.map(item => `
           <div class="box">
             <img src="${item.image}"
                  alt="${item.title}"
