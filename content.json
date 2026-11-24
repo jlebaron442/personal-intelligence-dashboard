@@ -1,0 +1,74 @@
+[
+  {
+    "title": "How Experts Make Decisions Under Uncertainty",
+    "summary": "Good decisions can still produce bad outcomes. Judge process, not results.",
+    "source": "Annie Duke",
+    "author": "Annie Duke",
+    "image": "images/decision-making.jpg",
+    "url": "#",
+    "category": "Mental Models",
+    "type": "Featured",
+    "readTime": "8 min",
+    "dateAdded": "2026-11-23"
+  },
+  {
+    "title": "The Map Is Not The Territory",
+    "summary": "Models simplify reality but should never be mistaken for reality itself.",
+    "source": "Farnam Street",
+    "author": "Shane Parrish",
+    "image": "images/map-territory.jpg",
+    "url": "#",
+    "category": "Mental Models",
+    "type": "Insight",
+    "readTime": "5 min",
+    "dateAdded": "2026-11-23"
+  },
+  {
+    "title": "The Conversation Pattern That Predicts Divorce",
+    "summary": "Contempt remains the strongest predictor of relationship breakdown.",
+    "source": "Gottman Institute",
+    "author": "John Gottman",
+    "image": "images/gottman-conversation.jpg",
+    "url": "#",
+    "category": "Family",
+    "type": "Featured",
+    "readTime": "7 min",
+    "dateAdded": "2026-11-23"
+  },
+  {
+    "title": "Why Great Engineers Need Strategy Skills",
+    "summary": "Technical expertise grows in value when paired with strategic thinking.",
+    "source": "MIT Sloan",
+    "author": "MIT Sloan Review",
+    "image": "images/engineering-strategy.jpg",
+    "url": "#",
+    "category": "Strategy",
+    "type": "Featured",
+    "readTime": "9 min",
+    "dateAdded": "2026-11-23"
+  },
+  {
+    "title": "The Future of Medical Device Development",
+    "summary": "AI and systems engineering are reshaping medtech innovation.",
+    "source": "MD+DI",
+    "author": "MD+DI Editorial",
+    "image": "images/medical-device-future.jpg",
+    "url": "#",
+    "category": "Engineering",
+    "type": "Curated Link",
+    "readTime": "6 min",
+    "dateAdded": "2026-11-23"
+  },
+  {
+    "title": "Winter Light in Bergen",
+    "summary": "The changing light along the fjords offers a reminder to slow down and pay attention.",
+    "source": "Bergens Tidende",
+    "author": "BT Feature Desk",
+    "image": "images/bergen-winter.jpg",
+    "url": "#",
+    "category": "Norway & Ideas",
+    "type": "Featured",
+    "readTime": "4 min",
+    "dateAdded": "2026-11-23"
+  }
+]
