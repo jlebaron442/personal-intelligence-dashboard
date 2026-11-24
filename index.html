@@ -76,8 +76,8 @@ small {
 fetch("content.json")
   .then(res => res.json())
 .then(data => {
-  const featured = data.find(item => item.featured);
-  const articles = data.filter(item => !item.featured);
+  const featured = data.find(item => item.featured) || data[0];
+  const articles = data.filter(item => item !== featured);
     document.getElementById("content").innerHTML = `
       <div class="hero-card">
         <img src="${featured.image}" alt="${featured.title}">
