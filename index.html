@@ -91,12 +91,6 @@ fetch("content.json")
     document.getElementById("content").innerHTML = `
       <div class="hero-card">
 <h2>${featured.url}</h2>
-  <a href="${featured.url}"
-     target="_blank"
-     style="color:#222;text-decoration:none;">
-    ${featured.title}
-  </a>
-</h2>
     <p>${featured.summary}</p>
     <small>${featured.source} • ${featured.readTime}</small>
   </div>
