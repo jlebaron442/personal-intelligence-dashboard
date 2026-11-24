@@ -67,7 +67,9 @@ small {
 <script>
 fetch("content.json")
   .then(res => res.json())
-  .then(data => {
+.then(data => {
+  const featured = data.find(item => item.featured);
+  const articles = data.filter(item => !item.featured);
     document.getElementById("content").innerHTML = `
       <div class="grid">
         ${data.map(item => `
