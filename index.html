@@ -90,7 +90,9 @@ fetch("content.json")
   const articles = data.filter(item => !item.featured);
     document.getElementById("content").innerHTML = `
       <div class="hero-card">
+<a href="${featured.url}" target="_blank">
   <img src="${featured.image}" alt="${featured.title}">
+</a>
   <div class="hero-content">
     <h2>
   <a href="${featured.url}"
