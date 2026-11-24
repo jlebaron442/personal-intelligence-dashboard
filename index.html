@@ -56,23 +56,6 @@ p {
 small {
   color: #666;
 }
-  @media (max-width: 768px) {
-  body {
-    margin: 20px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .hero-card img {
-    height: 220px;
-  }
-}
 </style>
 </head>
 <body>
@@ -92,13 +75,7 @@ fetch("content.json")
       <div class="hero-card">
   <img src="${featured.image}" alt="${featured.title}">
   <div class="hero-content">
-    <h2>
-  <a href="${featured.url}"
-     target="_blank"
-     style="color:#222;text-decoration:none;">
-    ${featured.title}
-  </a>
-</h2>
+    <h2>${featured.title}</h2>
     <p>${featured.summary}</p>
     <small>${featured.source} • ${featured.readTime}</small>
   </div>
