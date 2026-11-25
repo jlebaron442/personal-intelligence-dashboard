@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 14 * * *"
+  push:
+    paths:
+      - decisions.json
 
 jobs:
   test:
@@ -15,11 +18,10 @@ jobs:
       - uses: actions/checkout@v5
       - name: Run script
         run: python update_content.py
-      - name: Commit candidates
+      - name: Commit changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add candidates.json
-          git commit -m "Update candidates" || echo "No changes"
+          git add candidates.json content.json decisions.json
+          git commit -m "Update content" || echo "No changes"
           git push
-        
