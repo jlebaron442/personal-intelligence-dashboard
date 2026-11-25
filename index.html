@@ -90,6 +90,15 @@ small {
 <script>
 const MAX_CARDS = 12;
 
+  const FALLBACK = {
+  "Mental Models": "images/map-territory.jpg",
+  "Family": "images/gottman-conversation.jpg",
+  "Strategy": "images/engineering-strategy.jpg",
+  "Engineering": "images/medical-device-future.jpg",
+  "Norway & Ideas": "images/bergen-winter.jpg"
+};
+const imgFor = item => item.image || FALLBACK[item.category] || "";
+  
 // Join non-empty values with a separator
 const meta = (...parts) => parts.filter(Boolean).join(" • ");
 
@@ -119,7 +128,7 @@ fetch("content.json?" + Date.now())
       <div class="grid">
         ${articles.map(item => `
           <div class="box">
-            ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ""}
+            ${imgFor(item) ? `<img src="${imgFor(item)}" alt="${item.title}" onerror="this.onerror=null;this.src='${FALLBACK[item.category] || ""}'">` : ""}
             <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
             ${item.summary ? `<p>${item.summary}</p>` : ""}
             <small>
