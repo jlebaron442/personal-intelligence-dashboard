@@ -8,9 +8,18 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run script
         run: python update_content.py
+      - name: Commit candidates
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add candidates.json
+          git commit -m "Update candidates" || echo "No changes"
+          git push
         
