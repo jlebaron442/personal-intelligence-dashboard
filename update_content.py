@@ -24,6 +24,25 @@ cutoff = str(date.today() - timedelta(days=14))
 for i in items:
     if i["status"] == "new" and i["dateAdded"] < cutoff:
         i["status"] = "expired"
+CATEGORY = {"Farnam Street": "Mental Models", "Psyche": "Mental Models",
+            "Gottman Institute": "Family", "Greater Good": "Family",
+            "HBR": "Strategy", "MIT Sloan": "Strategy", "McKinsey": "Strategy",
+            "IEEE Spectrum": "Engineering", "MD+DI": "Engineering", "EE Times": "Engineering",
+            "Aeon": "Norway & Ideas", "Life in Norway": "Norway & Ideas"}
+
+dec = json.load(open("decisions.json")) if os.path.exists("decisions.json") else {}
+content = json.load(open("content.json"))
+for i in items:
+    choice = dec.get(i["url"])
+    if not choice or i["status"] != "new": continue
+    i["status"] = choice
+    if choice == "kept":
+        content.append({"title": i["title"], "summary": "", "source": i["source"],
+                        "author": "", "image": "", "url": i["url"],
+                        "category": CATEGORY.get(i["source"], ""), "type": "Curated Link",
+                        "readTime": "", "dateAdded": str(date.today())})
+json.dump(content, open("content.json", "w"), indent=2)
+json.dump({}, open("decisions.json", "w"))
 seen = {i["url"] for i in items}
 
 for source, feed in FEEDS.items():
