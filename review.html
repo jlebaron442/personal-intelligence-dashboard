@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review · The Long View</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+body{
+  background-image:url('IMG_4433.jpeg');
+  background-size:cover; background-position:center; background-attachment:fixed;
+  margin:40px; font-family:'Satoshi',sans-serif; color:#222;
+}
+h1{ color:white; font-size:2.4rem; margin-bottom:5px; }
+.bar{ color:white; margin-bottom:20px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+select,button{ font-family:inherit; font-size:1rem; padding:6px 12px; border-radius:8px; border:none; cursor:pointer; }
+.item{
+  background:rgba(255,255,255,0.6); backdrop-filter:blur(4px);
+  padding:12px 15px; margin-bottom:10px; border-radius:10px;
+  display:flex; justify-content:space-between; align-items:center; gap:12px;
+}
+.item a{ color:#222; text-decoration:none; font-weight:600; }
+.item small{ color:#555; }
+.keep{ background:#2e7d32; color:white; }
+.skip{ background:#ddd; }
+.item.kept{ outline:3px solid #2e7d32; }
+.item.skipped{ opacity:0.4; }
+#out{ width:100%; height:150px; margin-top:15px; font-family:monospace; display:none; }
+@media (max-width:700px){ body{ margin:16px; } .item{ flex-direction:column; align-items:flex-start; } }
+</style>
+</head>
+<body>
+
+<h1>Review</h1>
+<div class="bar">
+  <span id="count"></span>
+  <select id="source"><option value="">All sources</option></select>
+  <button id="copy">Copy decisions</button>
+</div>
+<div id="list"></div>
+<textarea id="out" readonly></textarea>
+
+<script>
+const decisions = {};
+let all = [];
+
+fetch("candidates.json?" + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    all = data.filter(i => i.status === "new")
+              .sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));
+    [...new Set(all.map(i => i.source))].sort().forEach(s =>
+      source.insertAdjacentHTML("beforeend", `<option>${s}</option>`));
+    render();
+  });
+
+function render() {
+  const f = source.value;
+  const shown = all.filter(i => !f || i.source === f);
+  count.textContent = `${shown.length} to review · ${Object.keys(decisions).length} decided`;
+  list.innerHTML = shown.map((i, n) => `
+    <div class="item ${decisions[i.url] || ""}" data-url="${encodeURIComponent(i.url)}">
+      <div>
+        <a href="${i.url}" target="_blank">${i.title}</a><br>
+        <small>${i.source} • ${i.dateAdded}</small>
+      </div>
+      <div>
+        <button class="keep">Keep</button>
+        <button class="skip">Skip</button>
+      </div>
+    </div>`).join("");
+}
+
+list.addEventListener("click", e => {
+  const card = e.target.closest(".item");
+  if (!card || e.target.tagName !== "BUTTON") return;
+  const url = decodeURIComponent(card.dataset.url);
+  const choice = e.target.classList.contains("keep") ? "kept" : "skipped";
+  decisions[url] = decisions[url] === choice ? undefined : choice;
+  if (!decisions[url]) delete decisions[url];
+  render();
+});
+
+source.addEventListener("change", render);
+
+copy.addEventListener("click", () => {
+  out.style.display = "block";
+  out.value = JSON.stringify(decisions, null, 2);
+  out.select();
+  navigator.clipboard?.writeText(out.value).catch(() => {});
+  copy.textContent = "Copied ✓";
+  setTimeout(() => copy.textContent = "Copy decisions", 2000);
+});
+</script>
+</body>
+</html>
