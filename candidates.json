@@ -4554,5 +4554,167 @@
     "decided": "2026-11-25",
     "summary": "The post Join Me on a Northern Lights Cruise to Norway in 2027 appeared first on Life in Norway .",
     "image": ""
+  },
+  {
+    "title": "When Your Employees Resist AI",
+    "url": "/2026/11/11-24-agenda",
+    "source": "HBR",
+    "summary": "Four strategies to speed up AI adoption among reticent employees.",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Leading Others Without Losing Yourself",
+    "url": "/2026/11/leading-others-without-losing-yourself",
+    "source": "HBR",
+    "summary": "An HBR Executive Live with professor and author Arthur C. Brooks",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Research: When Leaders Practice Gratitude, It Spreads Through Their Organization",
+    "url": "/2026/11/research-when-leaders-practice-gratitude-it-spreads-through-their-organization",
+    "source": "HBR",
+    "summary": "A new study finds that when leaders express gratitude, it helps employees notice the good in their own lives.",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Innovation Summit 2026: FedEx\u2019s Raj Subramaniam on Innovating at the Speed of Global Commerce",
+    "url": "/podcast/2026/11/innovation-summit-2026-fedexs-raj-subramaniam-on-innovating-at-the-speed-of-global-commerce",
+    "source": "HBR",
+    "summary": "A conversation with the shipping leader about staying customer-centric in a time of geopolitical and technological transformation.",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Europe's MDR May Be Hurting Innovation",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRXZTQnBJZmZWUnBCN1FNYmEyVnc3dktXemh2RGwxMDJ1MVZmakc2bENlaWFLU1IyZkc2UGJkbEp3Q3Bnd1hJUTFzR1pFNlFXZGtmRHZjWWkyVmxyMzF1Rk1xbXh1S1RaNTNpdGM4T1o0TmVfb2dCcFY3cEpxamlvQUYzUURzeUZ5bW8tOA?oc=5",
+    "source": "MD+DI",
+    "summary": "",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Why Women Are Embracing Biomedical Engineering",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNGtGTUlkM2FZR21HQmZnNVJqUjlSMzZFTkFyRUFLVXprT1Y0NXBnMVU5N0pNNHB6cFZ1RUVuaU15cFhsWjVTa1E1N2wxUXBkN3UtWXVmQ1J2TEtoem8tcjhRVnkwcVZFTFlIa1RsdUJBaGxJUlhJZG9FTEZhWTlLLVU0WW5NU1ZLWmc?oc=5",
+    "source": "MD+DI",
+    "summary": "",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Infineon CoolSET\u2122 SiP Enables Efficient, \u2018First-Time-Right\u2019 Auxiliary Power Designs",
+    "url": "https://www.eetimes.com/infineon-coolset-sip-enables-efficient-first-time-right-auxiliary-power-designs/",
+    "source": "EE Times",
+    "summary": "Auxiliary supply is indispensable, and designers need to facilitate high-efficiency solutions across a wide range of loads, in a limited PCB area, and deliver first-time-right designs. The post Infineon CoolSET\u2122 SiP\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/fig1_CoolSET-SiP_DSO-27-1_Combi_Small.png",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "MCRPS Power Supply for Enterprise Data Centers",
+    "url": "https://www.eetimes.com/mcrps-power-supply-for-enterprise-data-centers/",
+    "source": "EE Times",
+    "summary": "The 5.6 kW MCRPS reference design from Infineon provides a viable solution for next-generation common redundant PSUs in enterprise servers. The post MCRPS Power Supply for Enterprise Data Centers appeared first on EE\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/fig2_85a8b6.png",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Turning Optical Telemetry into Cluster Reliability: Integrating Link Health Data into Monitoring and Ticketing",
+    "url": "https://www.eetimes.com/turning-optical-telemetry-into-cluster-reliability-integrating-link-health-data-into-monitoring-and-ticketing/",
+    "source": "EE Times",
+    "summary": "Explore how integrating optical link health data into monitoring and ticketing can help teams improve cluster reliability. The post Turning Optical Telemetry into Cluster Reliability: Integrating Link Health Data\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/Credo-Featured-Image-1.png",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "AI Makes Formal Verification Practical",
+    "url": "https://www.eetimes.com/ai-makes-formal-verification-practical/",
+    "source": "EE Times",
+    "summary": "AI model startup Harmonic is expanding into formal verification for software and hardware. The post AI Makes Formal Verification Practical appeared first on EE Times .",
+    "image": "https://www.eetimes.com/wp-content/uploads/AI-Verified-Chip-Design-Loop.jpg",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Understanding Accuracy and Resolution for Magnetic Angle Sensors",
+    "url": "https://www.eetimes.com/understanding-accuracy-and-resolution-for-magnetic-angle-sensors/",
+    "source": "EE Times",
+    "summary": "Learn how magnetic angle sensor accuracy and resolution affect position measurement, and explore key factors for precise, reliable sensing applications. The post Understanding Accuracy and Resolution for Magnetic\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/Thumbnail-600x340_8b880e.png",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "AMD Tackles DRAM Shortages with AI and Flash Storage",
+    "url": "https://www.eetimes.com/amd-tackles-dram-shortages-with-ai-and-flash-storage/",
+    "source": "EE Times",
+    "summary": "AMD MEXT uses AI to park cold memory pages in flash, cutting DRAM costs and easing data center shortages. The post AMD Tackles DRAM Shortages with AI and Flash Storage appeared first on EE Times .",
+    "image": "https://www.eetimes.com/wp-content/uploads/AdobeStock_801576357-e1795579747501.jpeg",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Winbond Widens Edge AI Reach, Certifies NOR Flash",
+    "url": "https://www.eetimes.com/winbond-widens-edge-ai-reach-certifies-nor-flash/",
+    "source": "EE Times",
+    "summary": "Winbond is pairing bandwidth and density to meet the edge\u2019s demand for faster, safer memory without the custom-design price tag. The post Winbond Widens Edge AI Reach, Certifies NOR Flash appeared first on EE Times .",
+    "image": "https://www.eetimes.com/wp-content/uploads/AdobeStock_2074820436-e1789704646256.jpeg",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Southchip Showcases Automotive Power, Charging, and Load-Control Solutions at electronica Munich",
+    "url": "https://www.eetimes.com/southchip-showcases-automotive-power-charging-and-load-control-solutions-at-electronica-munich/",
+    "source": "EE Times",
+    "summary": "Southchip presented its automotive PMICs, 240W USB charging, wireless charging, ambient lighting, and high-side drivers at electronica Munich. The post Southchip Showcases Automotive Power, Charging, and Load-Control\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/\u5c01\u9762\u56fe\u7247-600x340-1.jpg",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "From AI Platforms to Industry Innovation: How NVIDIA Connects Startups to Build an AI Ecosystem",
+    "url": "https://www.eetimes.com/from-ai-platforms-to-industry-innovation-how-nvidia-connects-startups-to-build-an-ai-ecosystem/",
+    "source": "EE Times",
+    "summary": "For AI startups, the real challenge is often not building AI itself, but getting it to work reliably in the real world. The post From AI Platforms to Industry Innovation: How NVIDIA Connects Startups to Build an AI\u2026",
+    "image": "https://www.eetimes.com/wp-content/uploads/600x340_000_tw-inception-program-nvidia-innovex-2025-1.jpg",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "The passing",
+    "url": "https://aeon.co/videos/a-veterinarian-helps-cindy-say-goodbye-to-fiona-her-17-year-old-dog",
+    "source": "Aeon",
+    "summary": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona - by Aeon Video Watch on Aeon",
+    "image": "https://images.aeonmedia.co/images/385ed371-546c-49fb-ae83-20783d17e0c3/the-passing-landscape-1.jpg?width=1200&quality=75&format=auto",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Alone-together in Karachi",
+    "url": "https://psyche.co/turning-points/the-streets-of-karachi-scared-me-less-than-home-did",
+    "source": "Psyche",
+    "summary": "Here, women pass from father to husband, like property. My friend and I rented our own apartment instead - by Sadia Khatri Read on Psyche",
+    "image": "https://images.aeonmedia.co/images/2c93b1cd-a5bf-4097-8468-9c953c8367c7/v4-badarcommercial4.jpg?top=138&left=0&cropWidth=2624&cropHeight=1476&width=1200&quality=75&format=auto",
+    "dateAdded": "2026-11-25",
+    "status": "new"
+  },
+  {
+    "title": "Moving to Norway: Your Complete Relocation Guide",
+    "url": "https://www.lifeinnorway.net/moving-to-norway/",
+    "source": "Life in Norway",
+    "summary": "The post Moving to Norway: Your Complete Relocation Guide appeared first on Life in Norway .",
+    "image": "",
+    "dateAdded": "2026-11-25",
+    "status": "new"
   }
 ]
