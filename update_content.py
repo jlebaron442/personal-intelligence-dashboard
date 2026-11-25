@@ -1,5 +1,5 @@
 import json, os, urllib.request, xml.etree.ElementTree as ET
-from datetime import date
+from datetime import date, timedelta
 
 FEEDS = {
     "Farnam Street": "https://fs.blog/feed/",
@@ -20,6 +20,10 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 
 items = json.load(open(FILE)) if os.path.exists(FILE) else []
 items = [i for i in items if i["source"] in FEEDS]
+cutoff = str(date.today() - timedelta(days=14))
+for i in items:
+    if i["status"] == "new" and i["dateAdded"] < cutoff:
+        i["status"] = "expired"
 seen = {i["url"] for i in items}
 
 for source, feed in FEEDS.items():
