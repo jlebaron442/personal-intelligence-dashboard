@@ -13,13 +13,13 @@ FEEDS = {
     "EE Times": "https://www.eetimes.com/feed/",
     "Aeon": "https://aeon.co/feed.rss",
     "Psyche": "https://psyche.co/feed",
-    "NRK": "https://www.nrk.no/toppsaker.rss",
     "Bergens Tidende": "https://www.bt.no/rss",
 }
 FILE = "candidates.json"
 ATOM = "{http://www.w3.org/2005/Atom}"
 
 items = json.load(open(FILE)) if os.path.exists(FILE) else []
+items = [i for i in items if i["source"] in FEEDS]
 seen = {i["url"] for i in items}
 
 for source, feed in FEEDS.items():
