@@ -1,4 +1,4 @@
-import json, os, re, urllib.request, xml.etree.ElementTree as ET
+import html, json, os, re, urllib.request, xml.etree.ElementTree as ET
 from datetime import date, timedelta
 
 FEEDS = {
@@ -66,6 +66,31 @@ for i in items:
         content_urls.add(i["url"])
         added += 1
 print(added, "added to content.json")
+# 3b. Fill in image and summary from each new article's page (og: tags)
+def meta_tag(page, name):
+    for pat in (r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]*content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*(?:property|name)=["\']%s["\']'):
+        m = re.search(pat % re.escape(name), page, re.I)
+        if m:
+            return html.unescape(m.group(1)).strip()
+    return ""
+
+enriched = 0
+for c in content:
+    if c.get("image") or c.get("checked"):
+        continue
+    c["checked"] = True
+    try:
+        req = urllib.request.Request(c["url"], headers={**HEADERS, "Accept": "text/html"})
+        page = urllib.request.urlopen(req, timeout=15).read(400000).decode("utf-8", "ignore")
+    except Exception:
+        continue
+    c["image"] = meta_tag(page, "og:image")
+    if not c.get("summary"):
+        s = meta_tag(page, "og:description") or meta_tag(page, "description")
+        c["summary"] = s if len(s) <= 220 else s[:217].rsplit(" ", 1)[0] + "…"
+    enriched += 1
+print(enriched, "articles enriched with image/summary")
 
 # 4. Fetch feeds for new candidates
 seen_urls = {i["url"] for i in items}
