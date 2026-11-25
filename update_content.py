@@ -29,7 +29,7 @@ for source, feed in FEEDS.items():
         entries = [(e.findtext("title"), e.findtext("link")) for e in root.iter("item")]
         if not entries:  # Atom feeds
             entries = [(e.findtext(ATOM + "title"),
-                        (e.find(ATOM + "link") or {}).get("href"))
+                        (e.find(ATOM + "link").get("href") if e.find(ATOM + "link") is not None else None))
                        for e in root.iter(ATOM + "entry")]
         new = 0
         for title, url in entries:
