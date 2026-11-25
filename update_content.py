@@ -30,17 +30,27 @@ CATEGORY = {"Farnam Street": "Mental Models", "Psyche": "Mental Models",
             "IEEE Spectrum": "Engineering", "MD+DI": "Engineering", "EE Times": "Engineering",
             "Aeon": "Norway & Ideas", "Life in Norway": "Norway & Ideas"}
 
-dec = json.load(open("decisions.json")) if os.path.exists("decisions.json") else {}
+dec = {}
+if os.path.exists("decisions.json"):
+    raw, pos, decoder = open("decisions.json").read(), 0, json.JSONDecoder()
+    while True:
+        while pos < len(raw) and raw[pos].isspace(): pos += 1
+        if pos >= len(raw): break
+        obj, pos = decoder.raw_decode(raw, pos)
+        dec.update(obj)
+
 content = json.load(open("content.json"))
+content_urls = {c["url"] for c in content}
 for i in items:
     choice = dec.get(i["url"])
-    if not choice or i["status"] != "new": continue
-    i["status"] = choice
-    if choice == "kept":
+    if choice and i["status"] == "new":
+        i["status"] = choice
+    if i["status"] == "kept" and i["url"] not in content_urls:
         content.append({"title": i["title"], "summary": "", "source": i["source"],
                         "author": "", "image": "", "url": i["url"],
                         "category": CATEGORY.get(i["source"], ""), "type": "Curated Link",
                         "readTime": "", "dateAdded": str(date.today())})
+        content_urls.add(i["url"])
 json.dump(content, open("content.json", "w"), indent=2)
 json.dump({}, open("decisions.json", "w"))
 seen = {i["url"] for i in items}
