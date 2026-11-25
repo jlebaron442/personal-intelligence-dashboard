@@ -24,7 +24,7 @@ seen = {i["url"] for i in items}
 
 for source, feed in FEEDS.items():
     try:
-        req = urllib.request.Request(feed, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(feed, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "application/rss+xml, application/xml, text/xml, */*"})
         root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
         entries = [(e.findtext("title"), e.findtext("link")) for e in root.iter("item")]
         if not entries:  # Atom feeds
