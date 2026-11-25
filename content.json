@@ -451,7 +451,7 @@
   },
   {
     "title": "What is the agentic factory? An update to the machinery of transformation for financial-services businesses",
-    "summary": "",
+    "summary": "An agentic factory is a centralized model to accelerate the development of effective agentic systems.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -464,7 +464,7 @@
   },
   {
     "title": "The unit of activation: How industrial companies can make AI work",
-    "summary": "",
+    "summary": "Industrial companies won\u2019t unlock AI\u2019s full potential by adding new tools to old processes. They need to redesign workflows\u2014and a practical way to make that transformation happen.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -477,7 +477,7 @@
   },
   {
     "title": "Is Japan due for a business reset?",
-    "summary": "",
+    "summary": "After three decades of stagnant economic growth, a new McKinsey report shows how Japan could unlock its potential through a new era of corporate dynamism.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -490,7 +490,7 @@
   },
   {
     "title": "The new consolidation: M&A shifts in European consumer tech and media",
-    "summary": "",
+    "summary": "As Europe\u2019s media landscape evolves, our analysis identifies the deal archetypes driving consolidation and where the next transactions are most likely to emerge.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -503,7 +503,7 @@
   },
   {
     "title": "Physical AI is breaking out of the box",
-    "summary": "",
+    "summary": "As physical AI scales, the biggest opportunities may extend well beyond today\u2019s most visible applications and best-funded technologies.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -516,7 +516,7 @@
   },
   {
     "title": "A bold vision for Belgium",
-    "summary": "",
+    "summary": "A productivity revolution could more than double the country\u2019s economic growth and ensure future prosperity.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -529,7 +529,7 @@
   },
   {
     "title": "Author Talks: Defining customer needs locally to create global value",
-    "summary": "",
+    "summary": "What is one of the biggest mistakes companies make when designing products? Dartmouth\u2019s Vijay Govindarajan outlines a playbook for high-performance, low-cost innovations that scale across markets.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -542,7 +542,7 @@
   },
   {
     "title": "Technology\u2019s next frontier",
-    "summary": "",
+    "summary": "Five of the 14 trends in McKinsey\u2019s 2026 tech trends report are on pace to attract at least twice as much investment as in 2025. What does this rapid growth mean for business and society?",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -555,7 +555,7 @@
   },
   {
     "title": "Always orbiting: How consumers plan travel experiences now",
-    "summary": "",
+    "summary": "Most travelers keep researching after they book a trip. The travel industry needs to spark interest early, stay engaged with customers, and give them reasons to stick with their original choices.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -568,7 +568,7 @@
   },
   {
     "title": "Beyond delivery: The human and economic toll of preeclampsia in the US",
-    "summary": "",
+    "summary": "Preeclampsia affects about one in 11 births a year in the United States, causing complications for mothers and babies and contributing to $28 billion in costs. More innovation and investment could help.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -581,7 +581,7 @@
   },
   {
     "title": "Assessing the growth trajectory of Finland\u2019s largest companies",
-    "summary": "",
+    "summary": "A year after revealing the growth gap between the country\u2019s largest publicly listed companies and their global peers, we find positive movement\u2014now it\u2019s time to accelerate, with bigger moves.",
     "source": "McKinsey",
     "author": "",
     "image": "",
@@ -685,10 +685,10 @@
   },
   {
     "title": "Vehicle-to-Grid: Great Idea or Unrealistic Dream? (Part 2)",
-    "summary": "",
+    "summary": "Vehicle-to-grid technology promises grid benefits but raises concerns over battery life, charging access, costs, and driver convenience. The post Vehicle-to-Grid: Great Idea or Unrealistic Dream? (Part 2) appeared\u2026",
     "source": "EE Times",
     "author": "",
-    "image": "",
+    "image": "https://www.eetimes.com/wp-content/uploads/shutterstock_1650839656.jpg",
     "url": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream-part-2/",
     "category": "Engineering",
     "type": "Curated Link",
@@ -698,10 +698,10 @@
   },
   {
     "title": "Vehicle-to-Grid: Great Idea or Unrealistic Dream?",
-    "summary": "",
+    "summary": "Vehicle-to-grid sounds like a partial solution for enhancing the grid, but the reality of the human factor may say otherwise. The post Vehicle-to-Grid: Great Idea or Unrealistic Dream? appeared first on EE Times .",
     "source": "EE Times",
     "author": "",
-    "image": "",
+    "image": "https://www.eetimes.com/wp-content/uploads/2024/09/Active-power-grid.jpg",
     "url": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream/",
     "category": "Engineering",
     "type": "Curated Link",
@@ -854,7 +854,7 @@
   },
   {
     "title": "What Will You Stop Doing Under Your New Strategy?",
-    "summary": "",
+    "summary": "Leaders must make deliberate trade-offs to turn strategic priorities into results.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -867,7 +867,7 @@
   },
   {
     "title": "The Subtle Marketing Tactics That Shape What We Buy",
-    "summary": "",
+    "summary": "A conversation with Durham University\u2019s Aarron Atkinson-Toal about the psychology at work every time we shop.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -880,7 +880,7 @@
   },
   {
     "title": "Who Can Say No to the Founder? A Strong Second-in-Command.",
-    "summary": "",
+    "summary": "New research shows how boards can guard against the kind of turmoil that has engulfed Nvidia.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -893,7 +893,7 @@
   },
   {
     "title": "We\u2019re Seeing the Costs of Moving Fast",
-    "summary": "",
+    "summary": "Recent technology breakdowns suggest organizations aren\u2019t spending adequate time and resources stress testing their operations.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -906,7 +906,7 @@
   },
   {
     "title": "How the Best Leaders Develop an Enterprise Mindset",
-    "summary": "",
+    "summary": "Shift your perspective in six ways.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -919,7 +919,7 @@
   },
   {
     "title": "The Case for \u201cSmall AI\u201d",
-    "summary": "",
+    "summary": "Stop overspending on technology your organization doesn\u2019t need.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -932,7 +932,7 @@
   },
   {
     "title": "Our Favorite Management Tips on Managing Change Fatigue",
-    "summary": "",
+    "summary": "A curated list from one of HBR\u2019s most popular newsletters.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -945,7 +945,7 @@
   },
   {
     "title": "Why Tariffs Aren\u2019t Bringing Factories Back to the U.S.",
-    "summary": "",
+    "summary": "As the auto industry shows, the economics of reshoring still don\u2019t add up for many manufacturers.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -958,7 +958,7 @@
   },
   {
     "title": "Is Your Company Ready for Decentralization?",
-    "summary": "",
+    "summary": "Three growing pains to monitor if your firm wants to shift to a business unit model.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -971,7 +971,7 @@
   },
   {
     "title": "Who Will Make a Great Leader? There\u2019s a Test for That.",
-    "summary": "",
+    "summary": "A conversation with Harvard University\u2019s David Deming on how he uses science to identify great team players, managers, and leaders.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -984,7 +984,7 @@
   },
   {
     "title": "Leaders Shouldn\u2019t Underestimate Time-Based Rewards",
-    "summary": "",
+    "summary": "Organizations that cultivate \u201ctime affluence\u201d may more easily attract talent, produce better work, and build a better culture.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -997,7 +997,7 @@
   },
   {
     "title": "Research: The Risks of Rewarding Top Employees with Better Schedules",
-    "summary": "",
+    "summary": "A study of 1,189 restaurant workers found that people with poor schedules were nearly twice as likely to quit when they saw that other colleagues fared better.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1010,7 +1010,7 @@
   },
   {
     "title": "The HBR Guide to Killing Projects\u00a0",
-    "summary": "",
+    "summary": "These seven HBR articles explain how to recognize when an initiative isn\u2019t working\u2014and when it\u2019s time to move on.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1023,7 +1023,7 @@
   },
   {
     "title": "What Customers Really Value\u2014and Why Leaders Keep Getting It Wrong",
-    "summary": "",
+    "summary": "Vikas Mittal, professor of marketing at Rice University, explains the benefits of a science-driven strategy and what executives often get wrong.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1036,7 +1036,7 @@
   },
   {
     "title": "How Consumer and Retail Leaders Can Close the Transformation Value Gap",
-    "summary": "",
+    "summary": "SPONSOR CONTENT FROM EY.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1049,7 +1049,7 @@
   },
   {
     "title": "To Land a C-Suite Job, Craft Your Career Story",
-    "summary": "",
+    "summary": "You\u2019ve built the career. Here\u2019s how to sell it.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1062,7 +1062,7 @@
   },
   {
     "title": "The Risks of Decentralizing Your Organization",
-    "summary": "",
+    "summary": "Three mistakes companies make when giving business units more accountability.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1075,7 +1075,7 @@
   },
   {
     "title": "The Topics We Avoid at Work\u2014and How to Start Talking About Them",
-    "summary": "",
+    "summary": "A conversation with HBS senior lecturer Christina Wing on raising sensitive subjects with clarity and respect.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1088,7 +1088,7 @@
   },
   {
     "title": "When Cardiac Care Comes Closer by Bringing Clinical Decisions Within Reach",
-    "summary": "",
+    "summary": "Sponsor Content from SIEMENS HEALTHINEERS.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1101,7 +1101,7 @@
   },
   {
     "title": "The \u201cHuman-in-the-Loop\u201d Fallacy",
-    "summary": "",
+    "summary": "Why putting people in charge of checking AI\u2019s work is a losing strategy\u2014and what leaders need to do instead.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1114,7 +1114,7 @@
   },
   {
     "title": "Build the Mindset That Keeps Your Team Moving Forward",
-    "summary": "",
+    "summary": "An HBR Executive Masterclass with positive psychology researcher Michelle Gielan.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1127,7 +1127,7 @@
   },
   {
     "title": "Building a Winning Organization",
-    "summary": "",
+    "summary": "An HBR Executive Live conversation with David M. Rubenstein.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "Empower Your Most Curious Employees to Drive Your Digital Transformation",
-    "summary": "",
+    "summary": "The employees most eager to experiment with AI and other emerging technologies can accelerate your company\u2019s digital transformation\u2014if you know how to harness them.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1153,7 +1153,7 @@
   },
   {
     "title": "Staying Principled in a Time of Uncertainty",
-    "summary": "",
+    "summary": "A conversation with former American Express CEO Kenneth Chenault on leadership in a challenging environment.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1166,7 +1166,7 @@
   },
   {
     "title": "The C-Suite Behaviors That Stall AI Transformations",
-    "summary": "",
+    "summary": "Because AI crosses functional boundaries, executives must learn to share authority, resources, and accountability.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1179,7 +1179,7 @@
   },
   {
     "title": "Leaders Need to Grapple with Employee Ambivalence on AI",
-    "summary": "",
+    "summary": "Your job isn\u2019t to project positivity. It\u2019s to acknowledge the tension, create a safe sandbox, and reinvest the gains.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1192,7 +1192,7 @@
   },
   {
     "title": "Lessons from UPS\u2019s Transformation",
-    "summary": "",
+    "summary": "How leaders can successfully pivot a failing business model\u2014while keeping profit margins high and teams aligned.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1205,7 +1205,7 @@
   },
   {
     "title": "Leaders Must Speak Honestly About Aging at Work",
-    "summary": "",
+    "summary": "Avoiding candid conversations about succession and retirement can damage your organization in the long run.",
     "source": "HBR",
     "author": "",
     "image": "",
@@ -1218,7 +1218,7 @@
   },
   {
     "title": "When You Feel Envy, Turn It Into Something Productive",
-    "summary": "",
+    "summary": "A conversation with author Stacy Kim on listening to yourself and your team.",
     "source": "HBR",
     "author": "",
     "image": "",
