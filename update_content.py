@@ -9,7 +9,7 @@ FEEDS = {
     "MIT Sloan": "https://sloanreview.mit.edu/feed/",
     "McKinsey": "https://www.mckinsey.com/insights/rss",
     "IEEE Spectrum": "https://spectrum.ieee.org/feeds/feed.rss",
-    "MD+DI": "https://www.mddionline.com/rss.xml",
+    "MD+DI": "https://news.google.com/rss/search?q=site:mddionline.com&hl=en-US&gl=US&ceid=US:en",
     "EE Times": "https://www.eetimes.com/feed/",
     "Aeon": "https://aeon.co/feed.rss",
     "Psyche": "https://psyche.co/feed",
