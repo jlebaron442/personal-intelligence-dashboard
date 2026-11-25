@@ -13,7 +13,7 @@ FEEDS = {
     "EE Times": "https://www.eetimes.com/feed/",
     "Aeon": "https://aeon.co/feed.rss",
     "Psyche": "https://psyche.co/feed",
-    "Bergens Tidende": "https://www.bt.no/rss",
+    "Life in Norway": "https://www.lifeinnorway.net/feed/",
 }
 FILE = "candidates.json"
 ATOM = "{http://www.w3.org/2005/Atom}"
