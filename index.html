@@ -97,10 +97,15 @@ fetch("content.json?" + Date.now())
   .then(res => res.json())
   .then(data => {
     const featured = data.find(item => item.featured) || data[0];
-    const articles = data
-      .filter(item => item !== featured)
-      .sort((a, b) => (b.dateAdded || "").localeCompare(a.dateAdded || ""))
-      .slice(0, MAX_CARDS);
+    // Newest first within each category, then take turns across categories
+    const byCat = {};
+    data.filter(item => item !== featured)
+        .sort((a, b) => (b.dateAdded || "").localeCompare(a.dateAdded || ""))
+        .forEach(item => (byCat[item.category || "Other"] ||= []).push(item));
+    const queues = Object.values(byCat).sort(() => Math.random() - 0.5);
+    const articles = [];
+    while (articles.length < MAX_CARDS && queues.some(q => q.length))
+      queues.forEach(q => q.length && articles.length < MAX_CARDS && articles.push(q.shift()));
 
     document.getElementById("content").innerHTML = `
       <div class="hero-card">
